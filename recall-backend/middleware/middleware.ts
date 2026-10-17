@@ -11,9 +11,9 @@ export function authMiddleware(req: Request, res: Response, next: NextFunction) 
   }
 
   try {
-    const decoded = jwt.verify(token, JWT_SECRET) as JwtPayload;
-    if (typeof decoded === "object" && decoded.userId) {
-      req.userId = decoded.userId;
+    const payload = jwt.verify(token, JWT_SECRET) as JwtPayload;
+    if (typeof payload === "object" && payload.userId) {
+      req.userId = payload.userId;
       return next();
     }
     return res.status(401).json({ msg: "Unauthorized" });
