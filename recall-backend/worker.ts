@@ -70,7 +70,7 @@ export async function processContent(job: ContentJob, deps: WorkerDeps) {
     .filter(Boolean)
     .join("\n\n");
 
-  if (!fullText || fullText.length < 20) {
+  if (!fullText || fullText.length < 200) {
     
     console.log(`[Worker] Not enough text for ${contentId} — marking done`);
     await db
