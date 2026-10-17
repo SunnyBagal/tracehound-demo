@@ -407,7 +407,7 @@ export function createApp(deps: AppDeps) {
           })
           .from(contents)
           .where(eq(contents.userId, userId))
-          .orderBy(desc(contents.createdAt))
+          .orderBy(contents.createdAt)
           .limit(5);
       }
 
