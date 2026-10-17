@@ -1,3 +1,10 @@
+# TraceHound reviewer demo
+
+This repository demonstrates [TraceHound](https://github.com/SunnyBagal/TraceHound)
+reviewing a copy of [Recall](https://github.com/SunnyBagal/Recall) at `57d920e`.
+Its pull requests are deliberate demo changes, including four one-line defects
+and one harmless control. They are left open for inspection.
+
 # Recall
 
 **[Live Demo →](https://recall.sunnybagal.com)**
