@@ -57,7 +57,7 @@ export const contents = pgTable("contents", {
   // og_description=D. coalesce keeps the expression null-safe; the explicit
   // 'english' config keeps it IMMUTABLE (required for a generated column).
   searchVector:     tsvector("search_vector").generatedAlwaysAs(
-    sql`setweight(to_tsvector('english', coalesce(title, '')), 'A') || setweight(to_tsvector('english', coalesce(og_title, '')), 'B') || setweight(to_tsvector('english', coalesce(summary, '')), 'C') || setweight(to_tsvector('english', coalesce(og_description, '')), 'D')`,
+    sql`setweight(to_tsvector('english', coalesce(title, '')), 'A') || setweight(to_tsvector('english', coalesce(og_title, '')), 'B') || setweight(to_tsvector('english', coalesce(summary, '')), 'C')`,
   ),
   createdAt:        timestamp("created_at").defaultNow().notNull(),
   updatedAt:        timestamp("updated_at").defaultNow().notNull(),
