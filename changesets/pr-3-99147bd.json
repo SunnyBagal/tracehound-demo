@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 2,
+  "analyzerVersion": "0.10.0",
+  "repo": {
+    "name": "SunnyBagal/tracehound-demo"
+  },
+  "base": {
+    "ref": "eac2a7b7c31217717bc320de7c0c39849371425e",
+    "sha": "eac2a7b7c31217717bc320de7c0c39849371425e"
+  },
+  "head": {
+    "ref": "99147bd04fa355ca465bc1b7c512924edc8bfcff",
+    "sha": "99147bd04fa355ca465bc1b7c512924edc8bfcff"
+  },
+  "nodeModules": [],
+  "components": [
+    {
+      "id": "recall-backend:brainly-server",
+      "name": "Brainly Server",
+      "declarations": {
+        "added": 0,
+        "modified": 1,
+        "removed": 0,
+        "formatting": 0
+      },
+      "edges": {
+        "crossComponentAdded": 0,
+        "crossComponentRemoved": 0,
+        "crossProcessAdded": 0,
+        "crossProcessRemoved": 0
+      },
+      "componentEdges": {
+        "added": [],
+        "removed": [],
+        "regrouped": []
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": ".github/workflows/tracehound-review.yml",
+      "status": "modified",
+      "linesAdded": 1,
+      "linesRemoved": 1,
+      "calls": {}
+    },
+    {
+      "path": "recall-backend/middleware/middleware.ts",
+      "status": "modified",
+      "linesAdded": 1,
+      "linesRemoved": 1,
+      "componentId": "recall-backend:brainly-server",
+      "calls": {
+        "base": {
+          "resolved": 0,
+          "external": 7,
+          "dynamic": 1
+        },
+        "head": {
+          "resolved": 0,
+          "external": 7,
+          "dynamic": 1
+        }
+      }
+    }
+  ],
+  "declarations": [
+    {
+      "id": "recall-backend/middleware/middleware.ts#authMiddleware",
+      "name": "authMiddleware",
+      "file": "recall-backend/middleware/middleware.ts",
+      "kind": "function",
+      "exported": true,
+      "status": "modified",
+      "componentId": "recall-backend:brainly-server",
+      "modifications": [
+        "body"
+      ],
+      "lines": {
+        "added": 1,
+        "removed": 1
+      },
+      "base": {
+        "file": "recall-backend/middleware/middleware.ts",
+        "startLine": 6,
+        "endLine": 23
+      },
+      "head": {
+        "file": "recall-backend/middleware/middleware.ts",
+        "startLine": 6,
+        "endLine": 23
+      }
+    }
+  ],
+  "edges": [],
+  "warnings": [],
+  "stats": {
+    "declarations": {
+      "added": 0,
+      "removed": 0,
+      "modified": 1,
+      "formatting": 0,
+      "unchanged": 332
+    },
+    "edges": {
+      "added": 0,
+      "removed": 0,
+      "unchanged": 208
+    },
+    "files": {
+      "added": 0,
+      "removed": 0,
+      "modified": 2
+    },
+    "calls": {
+      "base": {
+        "resolved": 492,
+        "external": 1327,
+        "dynamic": 493
+      },
+      "head": {
+        "resolved": 492,
+        "external": 1327,
+        "dynamic": 493
+      }
+    },
+    "runtimeMs": 2520
+  },
+  "limitations": [
+    "Renames are not detected: a renamed or moved declaration appears as removed + added (ids are file path + qualified name), and file renames are diffed with --no-renames.",
+    "Return types are compared only where annotated; inferred return types are not compared.",
+    "Bodies, signatures and types are compared as token streams: an edit that only touches whitespace or comments is modification \"formatting\" and doesn't count as modified in the rollups. JSX text is compared with its whitespace collapsed.",
+    "Interfaces, type aliases and enums are declarations (kind type, modification shape); non-exported module-level values and namespaces are not: their edits show as the module's body.",
+    "Call resolution is static (ts-morph symbols). Calls through parameters, locals, element access or untyped values are counted as dynamic per file; calls into packages or the TS lib are counted as external. Neither produces an edge.",
+    "Without a package's or the runtime's types installed, a call is counted external when its receiver chain starts at something imported, typed or constructed from a package, or at an undeclared runtime global from a fixed list (console, crypto, setTimeout, fetch, …); any other free identifier is dynamic.",
+    "Both trees are analyzed in git worktrees with the source checkout's node_modules symlinked in (listed in nodeModules): base and head see the checkout's installed dependency versions, which may differ from what either side's lockfile declares. A checkout without node_modules gets no package or runtime types, and calls on values typed only by them are dynamic.",
+    "Top-level code is one declaration per file (kind module): a change to statements outside any function shows as the module's body, not a finer declaration.",
+    "Route and queue edges come from the existing extractors (http-routes, bullmq-queues, redis) and are attributed to the innermost declaration around their evidence line."
+  ]
+}
