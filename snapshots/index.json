@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "latest": {
+    "repo": "SunnyBagal/tracehound-demo",
+    "sha": "6a1865d110fbf8c7689e9f59ea4dbfde4b88dae1",
+    "analyzerVersion": "0.10.0",
+    "path": "6a1865d110fbf8c7689e9f59ea4dbfde4b88dae1/0.10.0.json",
+    "createdAt": "2026-10-18T17:07:45.979Z"
+  },
+  "snapshots": [
+    {
+      "repo": "SunnyBagal/tracehound-demo",
+      "sha": "6a1865d110fbf8c7689e9f59ea4dbfde4b88dae1",
+      "analyzerVersion": "0.10.0",
+      "path": "6a1865d110fbf8c7689e9f59ea4dbfde4b88dae1/0.10.0.json",
+      "createdAt": "2026-10-18T17:07:45.979Z"
+    }
+  ],
+  "defaultRepo": "tracehound-demo",
+  "repos": [
+    {
+      "id": "tracehound-demo",
+      "name": "SunnyBagal/tracehound-demo",
+      "repoUrl": "https://github.com/SunnyBagal/tracehound-demo",
+      "defaultRef": "6a1865d110fbf8c7689e9f59ea4dbfde4b88dae1",
+      "latest": {
+        "repo": "SunnyBagal/tracehound-demo",
+        "sha": "6a1865d110fbf8c7689e9f59ea4dbfde4b88dae1",
+        "analyzerVersion": "0.10.0",
+        "path": "6a1865d110fbf8c7689e9f59ea4dbfde4b88dae1/0.10.0.json",
+        "createdAt": "2026-10-18T17:07:45.979Z"
+      },
+      "versions": [
+        {
+          "repo": "SunnyBagal/tracehound-demo",
+          "sha": "6a1865d110fbf8c7689e9f59ea4dbfde4b88dae1",
+          "analyzerVersion": "0.10.0",
+          "path": "6a1865d110fbf8c7689e9f59ea4dbfde4b88dae1/0.10.0.json",
+          "createdAt": "2026-10-18T17:07:45.979Z"
+        }
+      ]
+    }
+  ]
+}
