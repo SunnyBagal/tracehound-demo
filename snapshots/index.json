@@ -2,12 +2,19 @@
   "schemaVersion": 1,
   "latest": {
     "repo": "SunnyBagal/tracehound-demo",
-    "sha": "6a1865d110fbf8c7689e9f59ea4dbfde4b88dae1",
+    "sha": "d0c6d396d59e1f4a4f3f2eda372475145d5cc11a",
     "analyzerVersion": "0.10.0",
-    "path": "6a1865d110fbf8c7689e9f59ea4dbfde4b88dae1/0.10.0.json",
-    "createdAt": "2026-10-18T17:07:45.979Z"
+    "path": "d0c6d396d59e1f4a4f3f2eda372475145d5cc11a/0.10.0.json",
+    "createdAt": "2026-10-18T17:08:22.290Z"
   },
   "snapshots": [
+    {
+      "repo": "SunnyBagal/tracehound-demo",
+      "sha": "d0c6d396d59e1f4a4f3f2eda372475145d5cc11a",
+      "analyzerVersion": "0.10.0",
+      "path": "d0c6d396d59e1f4a4f3f2eda372475145d5cc11a/0.10.0.json",
+      "createdAt": "2026-10-18T17:08:22.290Z"
+    },
     {
       "repo": "SunnyBagal/tracehound-demo",
       "sha": "6a1865d110fbf8c7689e9f59ea4dbfde4b88dae1",
@@ -22,15 +29,22 @@
       "id": "tracehound-demo",
       "name": "SunnyBagal/tracehound-demo",
       "repoUrl": "https://github.com/SunnyBagal/tracehound-demo",
-      "defaultRef": "6a1865d110fbf8c7689e9f59ea4dbfde4b88dae1",
+      "defaultRef": "d0c6d396d59e1f4a4f3f2eda372475145d5cc11a",
       "latest": {
         "repo": "SunnyBagal/tracehound-demo",
-        "sha": "6a1865d110fbf8c7689e9f59ea4dbfde4b88dae1",
+        "sha": "d0c6d396d59e1f4a4f3f2eda372475145d5cc11a",
         "analyzerVersion": "0.10.0",
-        "path": "6a1865d110fbf8c7689e9f59ea4dbfde4b88dae1/0.10.0.json",
-        "createdAt": "2026-10-18T17:07:45.979Z"
+        "path": "d0c6d396d59e1f4a4f3f2eda372475145d5cc11a/0.10.0.json",
+        "createdAt": "2026-10-18T17:08:22.290Z"
       },
       "versions": [
+        {
+          "repo": "SunnyBagal/tracehound-demo",
+          "sha": "d0c6d396d59e1f4a4f3f2eda372475145d5cc11a",
+          "analyzerVersion": "0.10.0",
+          "path": "d0c6d396d59e1f4a4f3f2eda372475145d5cc11a/0.10.0.json",
+          "createdAt": "2026-10-18T17:08:22.290Z"
+        },
         {
           "repo": "SunnyBagal/tracehound-demo",
           "sha": "6a1865d110fbf8c7689e9f59ea4dbfde4b88dae1",
