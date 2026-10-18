@@ -1,30 +1,33 @@
 name: TraceHound review
 
 on:
+  push:
+    branches: [main]
   pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
+    types: [opened, synchronize, reopened, ready_for_review, closed]
 
-permissions:
-  pull-requests: write
-  contents: read
-
-concurrency:
-  group: tracehound-${{ github.event.pull_request.number }}
-  cancel-in-progress: true
+permissions: {}
 
 jobs:
-  review:
-    if: github.event.pull_request.head.repo.full_name == github.repository && !github.event.pull_request.draft
+  data:
+    if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    permissions:
+      contents: write
+    concurrency:
+      group: tracehound-data-${{ github.repository }}
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.sha }}
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 0
           persist-credentials: false
-      # Update this main-commit pin by hand after action changes.
-      - uses: SunnyBagal/TraceHound/.github/actions/tracehound-review@41a92a87deb4ae21bb09de461057adf7560f49d3
+      # Temporary live-check pin; restored afterwards.
+      - uses: SunnyBagal/TraceHound/.github/actions/tracehound-review@1fa94d3760bfacb1108c3efcce6509bcd3a5d6d2
         with:
           nebius-api-key: ${{ secrets.NEBIUS_API_KEY }}
-          max-comments: '10'
+          max-comments: '0'
           dry-run: 'false'
+          data-branch: 'on'
