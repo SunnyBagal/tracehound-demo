@@ -5,8 +5,8 @@
     "name": "SunnyBagal/tracehound-demo"
   },
   "base": {
-    "ref": "d0c6d396d59e1f4a4f3f2eda372475145d5cc11a",
-    "sha": "d0c6d396d59e1f4a4f3f2eda372475145d5cc11a"
+    "ref": "55c0dc7416d81387e1b252b9af6b4254e707134f",
+    "sha": "55c0dc7416d81387e1b252b9af6b4254e707134f"
   },
   "head": {
     "ref": "99147bd04fa355ca465bc1b7c512924edc8bfcff",
@@ -37,13 +37,6 @@
     }
   ],
   "files": [
-    {
-      "path": ".github/workflows/tracehound-review.yml",
-      "status": "modified",
-      "linesAdded": 8,
-      "linesRemoved": 12,
-      "calls": {}
-    },
     {
       "path": "recall-backend/middleware/middleware.ts",
       "status": "modified",
@@ -110,7 +103,7 @@
     "files": {
       "added": 0,
       "removed": 0,
-      "modified": 2
+      "modified": 1
     },
     "calls": {
       "base": {
@@ -124,7 +117,7 @@
         "dynamic": 493
       }
     },
-    "runtimeMs": 2822
+    "runtimeMs": 2824
   },
   "limitations": [
     "Renames are not detected: a renamed or moved declaration appears as removed + added (ids are file path + qualified name), and file renames are diffed with --no-renames.",
