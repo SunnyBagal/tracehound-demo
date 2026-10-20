@@ -147,7 +147,7 @@ function detectArticle(url: URL): boolean {
   return false
 }
 
-export function detectLinkType(rawUrl: string) : LinkDetectionResult {
+export function classifyLinkType(rawUrl: string) : LinkDetectionResult {
   let url : URL;
 
   try {
